@@ -1,0 +1,94 @@
+:root {
+  --cor-fundo: #f5f5f5;
+  --cor-primaria: #3333ff;
+  --cor-secundaria: #444;
+  --cor-borda: #cccccc;
+  --cor-texto: #111;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section, header, footer, nav {
+  padding: 16px;
+  margin-bottom: 16px;
+}
+section, header, footer {
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+}
+
+body {
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+h1, h2 {
+  color: var(--cor-primaria);
+}
+
+:root {
+  --fonte-principal: 'Arial', sans-serif;
+  --fonte-titulo: 'Verdana', sans-serif;
+
+  /* cores (mantém as anteriores) */
+  --cor-fundo: #f5f5f5;
+  --cor-primaria: #3333ff;
+  --cor-secundaria: #444;
+  --cor-borda: #ccc;
+  --cor-texto: #111;
+}
+
+body {
+  font-family: var(--fonte-principal);
+}
+
+h1, h2 {
+  font-family: var(--fonte-titulo);
+}
+
+#menu {
+  display: none;
+  background: white;
+  padding: 20px;
+  border: 1px solid var(--cor-borda);
+}
+
+.btn-fechar {
+  display: none;
+}
+
+.btn-menu {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+/* Menu escondido */
+.menu {
+  display: none;
+}
+
+/* Quando o checkbox estiver marcado → menu aparece */
+#toggle-menu:checked ~ .menu {
+  display: block;
+}
+
+/* Mostrar botão fechar só quando o menu está aberto */
+#toggle-menu:checked ~ .menu .btn-fechar {
+  display: block;
+}
+
+/* Esconder botão abrir quando o menu está aberto */
+#toggle-menu:checked ~ #abrir-menu {
+  display: none;
+}
